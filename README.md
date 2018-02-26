@@ -4,11 +4,11 @@ d3vilbug# python brutal_SSH.py -h
  
  ____             _        _     ____ ____  _   _ 
 | __ ) _ __ _   _| |_ __ _| |   / ___/ ___|| | | |
-|  _ \| '__| | | | __/ _` | |  	\___ \___ \| |_| |
-| |_) | |  | |_| | || (_| | |  	 ___) |__) |  _  |
+|  _ \| '__| | | | __/ _` | |   \___ \___ \| |_| |
+| |_) | |  | |_| | || (_| | |    ___) |__) |  _  |
 |____/|_|   \__,_|\__\__,_|_|   |____/____/|_| |_| @d3vilbug v1.0
 
-			
+      
 [$] python brutal_ssh.py -i Host [OPTION]
 
 Basic Help Menu:
@@ -26,3 +26,10 @@ Basic Help Menu:
                         No of threads (Default 4)
   -T TIMEOUT, --timeout TIMEOUT
                         Request timeout (Default 5)
+
+
+
+
+
+
+
