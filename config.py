@@ -66,3 +66,4 @@ ffb = ff + sb
 info_out = fgb + "[$] "
 ver_out = fyb + "[+] "
 err_out = frb + "[-] "
+
