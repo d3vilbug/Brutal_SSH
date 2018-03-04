@@ -7,7 +7,7 @@
 
 <img src="https://i.imgur.com/DoIksgM.png" />
 
-#### Output
+### Output
 
 <img src="https://i.imgur.com/GcIBpFZ.png" />
 
