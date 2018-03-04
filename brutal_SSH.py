@@ -49,6 +49,8 @@ class Brutal_SSH():
 		if args.user: self.usernames.put(args.user)
 		elif args.usersfile: self.do_fill_queue(args.usersfile, True)
 		if args.passwordsfile: self.do_fill_queue(args.passwordsfile, False)
+		print ver_out + "{}".format("Many SSH configuration limits the number of parallel")
+		print ver_out + "{}".format("connection, so it is recommended to reduce the task: use -t 4")
 		self.go_brutal()
 		
 	def banner(self):
