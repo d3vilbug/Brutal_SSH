@@ -41,8 +41,10 @@
 	python brutal_SSH.py -h
 
 ***Brute force password of single user***
+	
 	python brutal_SSH.py -i 192.168.7.128 -u msfadmin -P wordlist/passfile.txt
 
 ***Brute force user and password***
+	
 	python brutal_SSH.py -i 192.168.7.128 -U wordlist/userfile.txt -P wordlist/passfile.txt
 
