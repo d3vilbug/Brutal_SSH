@@ -1,4 +1,4 @@
-colorma
+colorama
 argparse
 threading
 Queue
